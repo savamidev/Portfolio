@@ -73,8 +73,8 @@ img {
 .project {
   display: flex;
   position: relative;
-  height: 330px;
-  width: 120px;
+  height: 350px;
+  width: 110px;
   border-bottom: 100px;
   border-radius: 100px;
   overflow: hidden;
@@ -133,8 +133,8 @@ img {
 .pOne:hover,
 .pTwo:hover,
 .pThree:hover {
-  height: 400px;
-  width: 170px;
+  height: 380px;
+  width: 160px;
   box-shadow: 0 0 5px #ffffff;
 
   .overlay {
@@ -165,16 +165,16 @@ footer {
 
 @media (min-width: 768px) {
   .project {
-    height: 700px;
-    width: 280px;
+    height: 600px;
+    width: 200px;
     border-bottom: 100px;
     border-radius: 200px;
   }
   .pOne:hover,
   .pTwo:hover,
   .pThree:hover {
-    height: 700px;
-    width: 300px;
+    height: 670px;
+    width: 240px;
     box-shadow: 0 0 5px #ffffff;
 
     .overlay {
@@ -184,7 +184,7 @@ footer {
     .project-link {
       color: #ffffff;
 
-      scale: 2.5;
+      scale: 2.1;
       text-shadow: 0 0 5px var(--secondColor);
     }
   }
@@ -204,6 +204,57 @@ footer {
 
   header i {
     font-size: 15px;
+    animation: arrowMove 1s infinite alternate;
+  }
+  
+  @keyframes arrowMove {
+    to {
+      transform: translateY(15px);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    height: 700px;
+    width: 250px;
+    border-bottom: 100px;
+    border-radius: 200px;
+  }
+  .pOne:hover,
+  .pTwo:hover,
+  .pThree:hover {
+    height: 760px;
+    width: 300px;
+    box-shadow: 0 0 5px #ffffff;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .project-link {
+      color: #ffffff;
+
+      scale: 2.4;
+      text-shadow: 0 0 5px var(--secondColor);
+    }
+  }
+
+  header {
+    a {
+      font-size: 25px;
+      font-weight: 500;
+      transition-duration: 0.5s;
+    }
+  
+    a:hover {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  header i {
+    font-size: 18px;
     animation: arrowMove 1s infinite alternate;
   }
   
