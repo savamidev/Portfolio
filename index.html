@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio Miguel Sánchez</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/LDM/Porfolio/js/script.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="container">
+        <section class="namePosition">
+          <p class="name">Miguel</p>
+          <section class="worker">
+            <p>
+              Creative Problem Solver • STRATEGIC THINKER • Web Design • LOGIC
+              PROGRAMMER • Creative Problem Solver • STRATEGIC THINKER • Web
+              Design • LOGIC PROGRAMMER • Creative Problem Solver • STRATEGIC
+              THINKER
+            </p>
+          </section>
+          <p class="subname">SanVaz</p>
+        </section>
+
+        <div class="containerTwo">
+          <section class="about">
+            <input type="checkbox" id="visibleAbout" />
+            <p class="aboutText">
+              AB
+              <label for="visibleAbout" class="toggle-label">
+                <span class="placeholder">O</span>
+                <span class="hidden-content">
+                  Desarrollador Web | Optimización de Bases de Datos |
+                  Programación Lógica. <br />
+                  Desarrollo de sistemas web escalables, optimización de bases
+                  de datos garatizando consistencia, eficiencia y alto
+                  rendimiento, integración de APIs, seguridad y trabajo bajo
+                  metodologías ágiles. Pensamiento analítico, gestión de
+                  equipos, alta resolución de problemas, proactivo, autodidacta,
+                  creativo y comunicador.
+                </span>
+              </label>
+              UT
+            </p>
+          </section>
+          <section class="porfolio">
+            <p class="porfolioText">
+              PORF
+              <span class="placeholder"><a href="views/porfolio.html">O</a></span>
+              LIO
+            </p>
+          </section>
+
+          <section class="contact">
+            <input type="checkbox" id="visibleContact" />
+            <p class="contactText">
+              C
+              <label for="visibleContact" class="toggle-label-contact">
+                <span class="placeholder">O</span>
+              </label>
+              NTACT
+            </p>
+            <div class="hidden-contact">
+              <form id="contactoForm">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre"
+                  maxlength="24"
+                  required
+                />
+
+                <label for="apelldios"></label>
+                <input
+                  type="text"
+                  id="apelldios"
+                  name="apelldios"
+                  placeholder="Apellidos"
+                  maxlength="48"
+                  required
+                />
+                <div class="genero">
+                <label for="genero">Género:</label>
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="genero"
+                  value="Masculino"
+                  required
+                />
+                <label for="masculino">Masculino</label>
+                <input
+                  type="radio"
+                  id="femenino"
+                  name="genero"
+                  value="Femenino"
+                />
+                <label for="femenino">Femenino</label>
+
+              </div>
+                <label for="email"></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+
+               
+                <label for="motivo"></label>
+                <select id="motivo" name="motivo" required>
+                  <option value="">Seleccione un motivo:</option>
+                  <option value="negocio">Negocio</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="sugerencia">Sugerencia</option>
+                </select>
+
+                <label for="mensaje"></label>
+                <textarea  id="mensaje" name="mensaje">Escriba aquí su mensaje...</textarea>
+
+                <div class="acept">
+                  <label for="terminos">Acepta los términos y condiciones</label>
+                  <input type="checkbox" id="terminos" name="terminos" required />
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </section>
+
+          <nav class="social-media">
+            <ul>
+              <li>
+                <a href="https://github.com/savamidev" target="_blank"
+                  >GitHub
+                </a>
+                <i class="fab fa-github icon"></i>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/miguel-s%C3%A1nchez-v%C3%A1zquez-639604207/"
+                  target="_blank"
+                  >Linkedin
+                </a>
+                <i class="fa-brands fa-linkedin icon"></i>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </main>
+    <footer>&copy; Miguel Sánchez Vázquez</footer>
+
+    
+  </body>
+</html>
