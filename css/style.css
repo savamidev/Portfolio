@@ -72,56 +72,79 @@
   font-size: 15vw;
   font-weight: bolder;
 
-  p {
-    font-size: 13vw;
+  .letter {
+    font-size: 15vw;
   }
 }
 
 #visibleAbout {
   display: none;
+  
 }
 
 .aboutText {
   display: inline-flex;
   align-items: center;
+  
+  
 }
+
 
 .toggle-label {
   cursor: pointer;
   transition: all 0.5s ease;
   display: inline-block;
   position: relative;
+  
 }
 
 .toggle-label .placeholder {
   display: inline;
+  
 }
 
 .toggle-label .hidden-content {
   display: none;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: normal;
   line-height: 15px;
   background-color: #000;
+  
 }
 
 #visibleAbout:checked + p.aboutText .toggle-label {
   background-color: #000;
   border-radius: 50%;
   color: white;
-  padding: 0.8em 1.05em 1.6em;
+  padding: 0.7em 1em 1.6em;
   width: 160px;
   height: 160px;
   text-align: center;
   align-content: center;
 }
 
+#visibleAbout:checked + p.aboutText .letter {
+  transform: scale(0.25);
+  transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+#visibleAbout:checked + p.aboutText .letter:first-of-type {
+  margin-right: -40px; 
+}
+
+#visibleAbout:checked + p.aboutText .letter:last-of-type {
+  margin-left: -37px;
+}
+
+
 #visibleAbout:checked + p.aboutText .toggle-label .hidden-content {
   display: inline;
+  
 }
 
 #visibleAbout:checked + p.aboutText .toggle-label .placeholder {
   display: none;
+  
 }
 
 .placeholder {
@@ -281,9 +304,6 @@
   background-color: var(--secondColor);
 }
 
-
-
-
 img {
   border-radius: 10px;
   width: 100px;
@@ -436,7 +456,7 @@ footer {
   font-size: 10px;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 @media (min-with: 1024) {
