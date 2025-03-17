@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  --primaryColor: #eceff2;
+  --textFormColor: #484848;
+}
+
+html {
+  background-color: var(--primaryColor);
+}
+
+#container {
+  margin: 70px 80px 20px;
+}
+
+header h2 {
+  color: var(--textFormColor);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.block1 .titleB1 {
+    color: var(--textFormColor);
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.block1 img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.block1 .textGame {
+    color: var(--textFormColor);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
