@@ -28,7 +28,7 @@ header {
 
   a {
     color: #000;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     text-decoration: none;
     margin: 10px auto 0px;
@@ -40,7 +40,6 @@ header {
     font-size: 14px;
     font-weight: 600;
   }
-
 }
 
 header i {
@@ -62,6 +61,7 @@ header i {
 }
 
 .blockOne {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -150,7 +150,7 @@ img {
 }
 
 .blockTwo {
-  margin-top: 100px;
+  margin-top: 250px;
   text-align: center;
 }
 
@@ -161,4 +161,55 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .project {
+    height: 600px;
+    width: 250px;
+    border-bottom: 100px;
+    border-radius: 200px;
+  }
+  .pOne:hover,
+  .pTwo:hover,
+  .pThree:hover {
+    height: 700px;
+    width: 300px;
+    box-shadow: 0 0 5px #ffffff;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .project-link {
+      color: #ffffff;
+
+      scale: 2.5;
+      text-shadow: 0 0 5px var(--secondColor);
+    }
+  }
+
+  header {
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      transition-duration: 0.5s;
+    }
+  
+    a:hover {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  header i {
+    font-size: 15px;
+    animation: arrowMove 1s infinite alternate;
+  }
+  
+  @keyframes arrowMove {
+    to {
+      transform: translateY(15px);
+    }
+  }
 }
