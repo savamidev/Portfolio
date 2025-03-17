@@ -165,8 +165,8 @@ footer {
 
 @media (min-width: 1024px) {
   .project {
-    height: 600px;
-    width: 250px;
+    height: 700px;
+    width: 280px;
     border-bottom: 100px;
     border-radius: 200px;
   }
