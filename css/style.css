@@ -27,7 +27,7 @@
 .subname {
   width: 95%;
   font-size: 21vw;
-  margin: auto;
+  margin: 10px auto;
   font-weight: bolder;
   letter-spacing: 15px;
 }
@@ -99,7 +99,7 @@
 
 .toggle-label .hidden-content {
   display: none;
-  font-size: 9.5px;
+  font-size: 10px;
   font-weight: normal;
   line-height: 15px;
   background-color: #000;
@@ -109,7 +109,7 @@
   background-color: #000;
   border-radius: 50%;
   color: white;
-  padding: 0.9em 1em 1.4em;
+  padding: 0.5em 1em 1.5em;
   width: 150px;
   height: 150px;
   text-align: center;
@@ -367,7 +367,7 @@ img {
 
 
 nav {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 30px;
 
   ul {
@@ -375,7 +375,7 @@ nav {
     display: inline-flex;
     margin-right: 40px;
     li {
-      margin: 10px;
+      margin: 15px;
     }
   }
 }
@@ -388,7 +388,7 @@ a {
 }
 
 .icon {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 .social-media li {
   position: relative;
@@ -420,8 +420,9 @@ a {
   font-size: 0.8rem;
   color: var(--primaryColor);
   background-color: var(--secondColor);
-  padding: 7px;
+  padding: 10px 10px 10px 10px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .social-media li:hover .icon {
