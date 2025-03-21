@@ -7,9 +7,10 @@
   --textFormColor: #484848;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  margin: 30px 0px ;
+  margin: 30px 0px;
   display: flex;
   justify-content: center;
 }
@@ -17,19 +18,21 @@ html, body {
 #backBtn {
   position: fixed;
   color: var(--textFormColor);
-  top: 20px;        
-  right: 20px;   
-  background: transparent;
+  top: 20px;
+  right: 30px;
+  background: #48484807;
   border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
   z-index: 100;
 }
 
-
 #container {
   width: 100%;
-  padding: 20px;}
+  padding: 20px;
+}
 
 header h2 {
   color: var(--textFormColor);
@@ -38,49 +41,68 @@ header h2 {
 }
 
 .block1 .titleB1 {
-    color: var(--textFormColor);
-    margin-top: 20px;
-    font-weight: 300;
-    letter-spacing: 2px;
+  color: var(--textFormColor);
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .block1 img {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 .block1 .textGame {
-    color: var(--textFormColor);
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 20px;
+  color: var(--textFormColor);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 a {
   color: #484848;
-  font-size: 14px;
+  font-size: 0.9rem;
   text-decoration: none;
   font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
- 
- #container {
-  max-width: 500px ;
- }
- 
+  #container {
+    max-width: 500px;
+  }
+
+  #backBtn {
+    padding: 5px 10px;
+    font-size: 1.7rem;
+  }
+
   .block1 .titleB1 {
-    font-size: 20px;
+    font-size: 1.5rem;
+  }
+
+  .block1 .textGame {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+
+  a {
+    font-size: 1rem;
+  }
 }
 
-.block1 .textGame {
-  font-size: 1.2rem;
-  margin-top: 30px;
-}
+@media screen and (min-width: 1024px) {
+  #backBtn {
+    padding: 5px 10px;
+    font-size: 2rem;
+  }
 
-a {
-  font-size: 1rem;
-}
+  .block1 .textGame {
+    font-size: 1.25rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
 }

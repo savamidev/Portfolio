@@ -9,16 +9,21 @@
 
 html,
 body {
-  margin: 50px 0;
+  height: 100%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 #backBtn {
   position: fixed;
   color: var(--textFormColor);
   top: 20px;
-  right: 20px;
-  background: transparent;
+  right: 30px;
+  background: #48484807;
   border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
   z-index: 100;
@@ -26,8 +31,6 @@ body {
 
 #container {
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto; 
   padding: 20px;
 }
 
@@ -51,16 +54,20 @@ header h2 {
   height: auto;
 }
 
-.block1 .textGame {
+.block1 .textBook {
   color: var(--textFormColor);
   font-size: 0.9rem;
   font-weight: 300;
-  margin: 20px 0px 20px;
+  margin-top: 20px;
+}
+
+.block1 p:nth-of-type(3) {
+  margin-bottom: 25px;
 }
 
 a {
   color: #484848;
-  font-size: 14px;
+  font-size: 0.9rem;
   text-decoration: none;
   font-weight: 400;
   padding-bottom: 30px;
@@ -71,16 +78,36 @@ a {
     max-width: 500px;
   }
 
-  .block1 .titleB1 {
-    font-size: 20px;
+  #backBtn {
+    padding: 5px 10px;
+    font-size: 1.7rem;
   }
 
-  .block1 .textGame {
-    font-size: 1.1rem;
+  .block1 .titleB1 {
+    font-size: 1.5rem;
+  }
+
+  .block1 .textBook {
+    font-size: 1.2rem;
     margin-top: 30px;
   }
 
   a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #backBtn {
+    padding: 5px 10px;
+    font-size: 2rem;
+  }
+
+  .block1 .textBook {
+    font-size: 1.25rem;
+  }
+
+  a {
+    font-size: 1.3rem;
   }
 }
