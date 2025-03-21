@@ -7,9 +7,11 @@
   --textFormColor: #484848;
 }
 
-html {
-  background-color: var(--primaryColor);
-  margin: 0px 10% 0px;
+html, body {
+  height: 100%;
+  margin: 30px 0px ;
+  display: flex;
+  justify-content: center;
 }
 
 #backBtn {
@@ -26,8 +28,9 @@ html {
 
 
 #container {
-  margin: 70px auto 20px;
-}
+  width: 100%;
+
+  padding: 20px;}
 
 header h2 {
   color: var(--textFormColor);
@@ -61,4 +64,24 @@ a {
   font-size: 14px;
   text-decoration: none;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+ 
+ #container {
+  max-width: 500px ;
+ }
+ 
+  .block1 .titleB1 {
+    font-size: 20px;
+}
+
+.block1 .textGame {
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+a {
+  font-size: 1rem;
+}
 }
