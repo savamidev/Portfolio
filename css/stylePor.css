@@ -195,11 +195,11 @@ img {
 }
 
 .webProject1 {
-  background-image: url("/img/capitanVeneno.jpg");
+  background-image: url("../img/capitanVeneno.jpg");
 }
 
 .webProject2 {
-  background-image: url("/img/mascotas.jpg");
+  background-image: url("../img/mascotas.jpg");
 }
 
 .webProject1,
