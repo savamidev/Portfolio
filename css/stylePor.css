@@ -154,6 +154,23 @@ img {
   text-align: center;
 }
 
+.webs {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.webProject1, 
+.webProject2 {
+  transition: 1s ease-out;
+}
+
+.webProject1:hover, 
+.webProject2:hover {
+  scale: 2;
+}
+
 footer {
   color: var(--primaryColor);
   background-color: #000;
@@ -193,20 +210,17 @@ footer {
     a {
       font-size: 18px;
       font-weight: 500;
-      transition-duration: 0.5s;
     }
-  
+
     a:hover {
       font-size: 25px;
-      font-weight: 600;
     }
   }
 
   header i {
     font-size: 15px;
-    animation: arrowMove 1s infinite alternate;
   }
-  
+
   @keyframes arrowMove {
     to {
       transform: translateY(15px);
@@ -215,52 +229,41 @@ footer {
 }
 
 @media (min-width: 1024px) {
+
   .project {
     height: 700px;
     width: 250px;
-    border-bottom: 100px;
-    border-radius: 200px;
   }
   .pOne:hover,
   .pTwo:hover,
   .pThree:hover {
     height: 760px;
     width: 300px;
-    box-shadow: 0 0 5px #ffffff;
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
 
     .project-link {
-      color: #ffffff;
-
       scale: 2.4;
-      text-shadow: 0 0 5px var(--secondColor);
     }
   }
 
   header {
+    p {
+      font-size: 155px;
+    }
+
     a {
       font-size: 25px;
-      font-weight: 500;
-      transition-duration: 0.5s;
     }
-  
+
     a:hover {
       font-size: 25px;
-      font-weight: 600;
     }
   }
 
   header i {
     font-size: 18px;
-    animation: arrowMove 1s infinite alternate;
   }
-  
-  @keyframes arrowMove {
-    to {
-      transform: translateY(15px);
-    }
+
+  .blockOne {
+    justify-content: space-evenly;
   }
 }

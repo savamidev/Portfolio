@@ -459,5 +459,6 @@ footer {
   margin-top: 30px;
 }
 
-@media (min-with: 1024) {
+@media (min-with: 768) {
+  
 }
