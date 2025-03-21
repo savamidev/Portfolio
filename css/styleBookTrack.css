@@ -7,18 +7,16 @@
   --textFormColor: #484848;
 }
 
-html, body {
-  height: 100%;
-  margin: 30px 0px ;
-  display: flex;
-  justify-content: center;
+html,
+body {
+  margin: 50px 0;
 }
 
 #backBtn {
   position: fixed;
   color: var(--textFormColor);
-  top: 20px;        
-  right: 20px;   
+  top: 20px;
+  right: 20px;
   background: transparent;
   border: none;
   font-size: 1rem;
@@ -26,10 +24,12 @@ html, body {
   z-index: 100;
 }
 
-
 #container {
   width: 100%;
-  padding: 20px;}
+  max-width: 500px;
+  margin: 0 auto; 
+  padding: 20px;
+}
 
 header h2 {
   color: var(--textFormColor);
@@ -38,24 +38,24 @@ header h2 {
 }
 
 .block1 .titleB1 {
-    color: var(--textFormColor);
-    margin-top: 20px;
-    font-weight: 300;
-    letter-spacing: 2px;
+  color: var(--textFormColor);
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .block1 img {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 .block1 .textGame {
-    color: var(--textFormColor);
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 20px;
+  color: var(--textFormColor);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 20px 0px 20px;
 }
 
 a {
@@ -63,24 +63,24 @@ a {
   font-size: 14px;
   text-decoration: none;
   font-weight: 400;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
- 
- #container {
-  max-width: 500px ;
- }
- 
+  #container {
+    max-width: 500px;
+  }
+
   .block1 .titleB1 {
     font-size: 20px;
-}
+  }
 
-.block1 .textGame {
-  font-size: 1.2rem;
-  margin-top: 30px;
-}
+  .block1 .textGame {
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
 
-a {
-  font-size: 1rem;
-}
+  a {
+    font-size: 1.1rem;
+  }
 }
