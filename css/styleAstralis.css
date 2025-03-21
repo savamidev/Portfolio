@@ -9,10 +9,24 @@
 
 html {
   background-color: var(--primaryColor);
+  margin: 0px 10% 0px;
 }
 
+#backBtn {
+  position: fixed;
+  color: var(--textFormColor);
+  top: 20px;        
+  right: 20px;   
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
 #container {
-  margin: 70px 80px 20px;
+  margin: 70px auto 20px;
 }
 
 header h2 {
@@ -40,4 +54,11 @@ header h2 {
     font-size: 0.9rem;
     font-weight: 300;
     margin-top: 20px;
+}
+
+a {
+  color: #484848;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
 }
