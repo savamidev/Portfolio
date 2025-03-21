@@ -88,7 +88,7 @@ a {
   }
 
   .block1 .textBook {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     margin-top: 30px;
   }
 
@@ -98,13 +98,21 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  #container {
+    max-width: 700px;
+  }
+  
   #backBtn {
     padding: 5px 10px;
     font-size: 2rem;
   }
 
   .block1 .textBook {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+
+  .block1 img {
+    min-width: 100%;
   }
 
   a {
