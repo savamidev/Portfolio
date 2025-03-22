@@ -9,51 +9,66 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <script src="../js/script.js"></script>
+    <!-- Se cargan los estilos y el script para el funcionamiento de la página de proyectos -->
   </head>
   <body>
     <div id="container">
       <header>
-        <a href="../index.html" class="porfolioButton"><i class="fa-solid fa-arrow-left"></i></a>
+        <!-- Botón de regreso al index mediante ícono -->
+        <a href="../index.html" class="porfolioButton">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <!-- Título principal de la sección de proyectos -->
         <p>[Projects]</p>
+        <!-- Enlace que desplaza la vista a la sección "Webs" -->
         <a href="#webDeveloper">Webs</a>
+        <!-- Ícono animado para indicar que hay más contenido abajo -->
         <i class="fa-solid fa-arrow-down"></i>
       </header>
       <main>
+        <!-- Bloque de proyectos con videos de fondo -->
         <div class="blockOne">
           <section class="project pOne">
+            <!-- Video de fondo del proyecto "Astralis Game" -->
             <video autoplay loop muted playsinline class="bg-video1">
               <source src="../img/AstralisGame.mp4" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
             </video>
+            <!-- Capa overlay para efecto visual -->
             <div class="overlay"></div>
+            <!-- Enlace que dirige a la página del proyecto "Astralis Game" -->
             <a href="AstralisGame.html" class="project-link">Astralis Game</a>
-
           </section>
 
           <section class="project PTwo">
+            <!-- Video de fondo del proyecto "BookTrack" -->
             <video autoplay loop muted playsinline class="bg-video2">
               <source src="../img/BookTrack.mp4" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
             </video>
             <div class="overlay"></div>
+            <!-- Enlace a la página del proyecto "BookTrack" -->
             <a href="BookTrack.html" class="project-link">BookTrack</a>
           </section>
 
           <section class="project PThree">
+            <!-- Video de fondo del proyecto "Portfolio" -->
             <video autoplay loop muted playsinline class="bg-video3">
               <source src="../img/Portfolio.mp4" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
             </video>
             <div class="overlay"></div>
-            <a href="portfolioProject.html" class="project-link"
-              >Portfolio</a
-            >
+            <!-- Enlace a la página del proyecto "Portfolio" -->
+            <a href="portfolioProject.html" class="project-link">Portfolio</a>
           </section>
         </div>
 
+        <!-- Bloque para proyectos web, identificado por el id "webDeveloper" -->
         <div id="webDeveloper" class="blockTwo">
+          <!-- Título con animación de íconos -->
           <h3><span class="sing1">&lt;</span>Webs<span class="sing2">&gt;</span></h3>
           <div class="webs">
+            <!-- Proyecto web "Capitan Veneno" con efecto hover -->
             <div class="webProject1">
               <a
                 href="https://github.com/savamidev/MiguelSanchez-1DAW/tree/ded28d4117a267922f56ae9d1bd3477b8e16386b/LDM/Capitan-Veneno"
@@ -61,6 +76,7 @@
               >
               <div class="opacity"></div>
             </div>
+            <!-- Proyecto web "Mascotas" con efecto hover -->
             <div class="webProject2">
               <a
                 href="https://github.com/savamidev/MiguelSanchez-1DAW/tree/ded28d4117a267922f56ae9d1bd3477b8e16386b/LDM/Mascostas"
@@ -71,6 +87,7 @@
           </div>
         </div>
       </main>
+      <!-- Footer con información de copyright -->
       <footer>&copy; Miguel Sánchez Vázquez</footer>
     </div>
   </body>

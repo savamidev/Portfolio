@@ -1,4 +1,7 @@
+/* Importación de fuentes necesarias */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Establecimiento de tipografía, márgenes y variables globales (definidas en este selector, NO se mueven) */
 * {
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
@@ -7,16 +10,19 @@
   --textFormColor: rgba(205, 205, 205, 0.562);
 }
 
+/* Se define el fondo de la página utilizando la variable global */
 html {
   background-color: var(--primaryColor);
 }
 
+/* Estilos para el encabezado de la página */
 header {
   padding: 80px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
 
+  /* Estilos internos para el párrafo del header */
   p {
     color: var(--secondColor);
     font-size: 15vw;
@@ -26,6 +32,7 @@ header {
     position: relative;
   }
 
+  /* Enlaces en el header con efecto hover */
   a {
     color: #000;
     font-size: 0.9rem;
@@ -42,6 +49,7 @@ header {
   }
 }
 
+/* Botón de portafolio (posición absoluta) */
 .porfolioButton {
   position: absolute;
   font-size: 0.7rem;
@@ -54,17 +62,20 @@ header {
   z-index: 10;
 }
 
+/* Animación para la flecha de dirección en el header */
 header .fa-arrow-down {
   font-size: 0.7rem;
   animation: arrowMove 1s infinite alternate;
 }
 
+/* Definición de keyframes para la animación de la flecha */
 @keyframes arrowMove {
   to {
     transform: translateY(10px);
   }
 }
 
+/* Contenedor principal que agrupa todo el contenido */
 #container {
   display: flex;
   flex-direction: column;
@@ -72,16 +83,19 @@ header .fa-arrow-down {
   color: var(--secondColor);
 }
 
+/* Bloque que contiene los proyectos (distribución horizontal) */
 .blockOne {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
 
+/* Estilo para imágenes (altura fija) */
 img {
   height: 100px;
 }
 
+/* Definición del contenedor de cada proyecto */
 .project {
   display: flex;
   position: relative;
@@ -94,6 +108,7 @@ img {
   align-items: center;
 }
 
+/* Capa de overlay semitransparente que se coloca sobre el proyecto */
 .overlay {
   position: absolute;
   width: 100%;
@@ -103,6 +118,7 @@ img {
   transition-duration: 0.6s;
 }
 
+/* Estilo para los enlaces dentro del proyecto */
 .project-link {
   color: #ffffff90;
   font-weight: 500;
@@ -113,6 +129,7 @@ img {
   transition-duration: 0.6s;
 }
 
+/* Configuración para videos de fondo (varios casos) */
 .bg-video1 {
   position: absolute;
   top: 0;
@@ -136,12 +153,14 @@ img {
   object-fit: cover;
 }
 
+/* Transiciones definidas para elementos con clases pOne, pTwo y pThree */
 .pOne,
 .pTwo,
 .pThree {
   transition-duration: 1s;
 }
 
+/* Comportamiento al hacer hover sobre elementos pOne, pTwo y pThree */
 .pOne:hover,
 .pTwo:hover,
 .pThree:hover {
@@ -149,29 +168,33 @@ img {
   width: 160px;
   box-shadow: 0 0 5px #ffffff;
 
+  /* Cambio en overlay al hacer hover */
   .overlay {
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  /* Cambio de estilo en el enlace del proyecto al hacer hover */
   .project-link {
     color: #ffffff;
-
     scale: 1.35;
     text-shadow: 0 0 5px var(--secondColor);
   }
 }
 
+/* Bloque final con contenido adicional (sección de webs, etc.) */
 .blockTwo {
   margin-top: 250px;
   text-align: center;
 }
 
+/* Distribución horizontal para elementos webs */
 .webs {
   display: flex;
   justify-content: space-around;
   margin: 50px auto 50px;
 }
 
+/* Animación para elementos sing1 */
 .sing1 {
   display: inline-block;
   animation: singMove1 1s infinite alternate;
@@ -183,6 +206,7 @@ img {
   }
 }
 
+/* Animación para elementos sing2 */
 .sing2 {
   display: inline-block;
   animation: singMove2 1s infinite alternate;
@@ -194,6 +218,7 @@ img {
   }
 }
 
+/* Proyectos web: asignación de imágenes de fondo */
 .webProject1 {
   background-image: url("../img/capitanVeneno.jpg");
 }
@@ -202,6 +227,7 @@ img {
   background-image: url("../img/mascotas.jpg");
 }
 
+/* Estilos compartidos para proyectos web */
 .webProject1,
 .webProject2 {
   background-position: 40% 30%;
@@ -216,6 +242,7 @@ img {
   transition: 0.5s ease;
 }
 
+/* Capa de opacidad para efectos de hover en proyectos web */
 .opacity {
   position: absolute;
   border-radius: 10px;
@@ -228,6 +255,7 @@ img {
   z-index: 1;
 }
 
+/* Estilos para enlaces en proyectos web */
 .webProject1 a,
 .webProject2 a {
   position: relative;
@@ -240,6 +268,7 @@ img {
   transition: 0.5s ease;
 }
 
+/* Efectos al hacer hover sobre proyectos web */
 .webProject1:hover,
 .webProject2:hover {
   width: 230px;
@@ -255,6 +284,7 @@ img {
   }
 }
 
+/* Estilos para el footer */
 footer {
   color: var(--primaryColor);
   background-color: #000;
@@ -265,6 +295,7 @@ footer {
 }
 
 @media (min-width: 768px) {
+  /* Ajustes para proyectos en dispositivos medianos */
   .project {
     height: 600px;
     width: 200px;
@@ -300,6 +331,7 @@ footer {
     }
   }
 
+  /* Definición de keyframes para animación de flecha (redefinido en media query) */
   @keyframes arrowMove {
     to {
       transform: translateY(15px);
@@ -315,6 +347,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  /* Ajustes para proyectos en pantallas grandes */
   .project {
     height: 900px;
     width: 250px;

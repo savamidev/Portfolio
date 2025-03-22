@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded");
 
-  // Funcionalidad para el contacto
+  // Funcionalidad para el contacto: desplegar y ocultar el formulario
   var visibleContact = document.getElementById('visibleContact');
   var hiddenContact = document.querySelector('.hidden-contact');
   
@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {
     console.log("No se encontró el elemento visibleContact o hiddenContact");
+  }
+
+  // Funcionalidad para interceptar el submit del formulario
+  var contactoForm = document.getElementById("contactoForm");
+  if (contactoForm) {
+    contactoForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Evitamos el envío real del formulario
+      alert("Actualmente no es posible el envío de datos. Intenta más tarde.");
+    });
+  } else {
+    console.log("No se encontró el formulario de contacto");
   }
 
   // Funcionalidad para mostrar/ocultar el botón de portfolio en base al referrer

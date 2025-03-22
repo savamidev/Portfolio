@@ -9,12 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="js/script.js" defer></script>
+    <!-- Se cargan los estilos y el script para el correcto funcionamiento del sitio -->
   </head>
   <body>
     <main>
       <div id="container">
+        <!-- Sección principal para mostrar nombre y especialidades -->
         <section class="namePosition">
           <p class="name">Miguel</p>
+          <!-- Sección con efecto marquee que muestra habilidades o roles -->
           <section class="worker">
             <p>
               Creative Problem Solver • STRATEGIC THINKER • Web Design • LOGIC
@@ -27,6 +30,7 @@
         </section>
 
         <div class="containerTwo">
+          <!-- Sección "about": muestra información adicional al activar el toggle -->
           <section class="about">
             <input type="checkbox" id="visibleAbout" />
             <p class="aboutText">
@@ -45,6 +49,7 @@
               <span class="letter">}UT</span>
             </p>
           </section>
+          <!-- Sección "porfolio" que enlaza a la página de proyectos -->
           <section class="porfolio">
             <p class="porfolioText">
               PR[
@@ -54,7 +59,7 @@
               ]JECTS
             </p>
           </section>
-
+          <!-- Sección "porfolio" que enlaza a la página de proyectos de lenguajes -->
           <section class="porfolio">
             <p class="porfolioText">
               PR[
@@ -64,7 +69,7 @@
               ]LANG
             </p>
           </section>
-
+          <!-- Sección de contacto: despliega el formulario al activar el toggle -->
           <section class="contact">
             <input type="checkbox" id="visibleContact" />
             <p class="contactText">
@@ -75,6 +80,7 @@
               }NTACT
             </p>
             <div class="hidden-contact">
+              <!-- Formulario de contacto -->
               <form id="contactoForm">
                 <label for="name"></label>
                 <input
@@ -95,6 +101,7 @@
                   maxlength="48"
                   required
                 />
+                <!-- Selección de género -->
                 <div class="genero">
                   <label for="genero">Género:</label>
                   <input
@@ -145,11 +152,14 @@
                     required
                   />
                 </div>
-                <button type="submit">Enviar</button>
+                <!-- Botón de envío (dentro de formulario dialog, se recomienda revisar la estructura HTML) -->
+                <form method="dialog">
+                  <button type="submit">Enviar</button>
+                </form>
               </form>
             </div>
           </section>
-
+          <!-- Menú de redes sociales -->
           <nav class="social-media">
             <ul>
               <li>

@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* Variables globales definidas en :root */
+:root {
+  --primaryColor: #eceff2;
+  --textFormColor: #484848;
+}
+
+/* Se establece tipografía y márgenes; se usa la variable global para el fondo */
 * {
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
-  --primaryColor: #eceff2;
-  --textFormColor: #484848;
+  background-color: var(--primaryColor);
 }
 
 html,
@@ -15,6 +21,7 @@ body {
   justify-content: center;
 }
 
+/* Botón de regreso configurado en posición fija */
 #backBtn {
   position: fixed;
   color: var(--textFormColor);
@@ -29,6 +36,7 @@ body {
   z-index: 100;
 }
 
+/* Contenedor principal con padding */
 #container {
   width: 100%;
   padding: 20px;
@@ -54,6 +62,7 @@ header h2 {
   height: auto;
 }
 
+/* Texto descriptivo del juego */
 .block1 .textGame {
   color: var(--textFormColor);
   font-size: 0.9rem;
@@ -61,6 +70,7 @@ header h2 {
   margin-top: 20px;
 }
 
+/* Estilo para enlaces */
 a {
   color: #484848;
   font-size: 0.9rem;
