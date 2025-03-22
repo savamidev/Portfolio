@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+/* Variables base */
+:root {
+  --primaryColor: #f8cb74;
+  --secondColor: #232323;
+  --backgroundWhite: #fff;
+  --textFormColor: rgba(205,205,205,0.56);
+  --transition: 0.3s;
+}
+
+/* Reset y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html {
+  background-color: var(--primaryColor);
+}
+
+/* Estructura principal */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: var(--secondColor);
+}
+
+/* Header (estilo igual a Projects) */
+header {
+  padding: 80px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header p {
+  color: var(--secondColor);
+  /* Uso clamp() para que el tamaño sea responsivo pero no excesivo */
+  font-size: clamp(0.5rem, 15vw, 6rem);
+  margin: auto;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  position: relative;
+}
+
+header a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 10px auto 0;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+header a:hover {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Botón de regreso */
+.porfolioButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7rem;
+  color: #ffffff;
+  background-color: var(--textFormColor);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Animación de la flecha abajo */
+header .fa-arrow-down {
+  font-size: 0.7rem;
+  animation: arrowMove 1s infinite alternate;
+}
+
+@keyframes arrowMove {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* Main y secciones */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.section-group {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-group h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grilla de íconos */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-item {
+  background-color: var(--backgroundWhite);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.icon-item i {
+  font-size: 3rem;
+  color: var(--secondColor);
+}
+
+/* Para imágenes externas (SVG) se iguala el tamaño y se aplica BN */
+.inline-svg {
+  width: 3rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+.icon-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondColor);
+}
+
+.icon-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #000;
+  color: var(--primaryColor);
+  font-size: 0.7rem;
+}
+
+/* Media Queries */
+
+/* Móviles (hasta 600px) */
+@media (max-width: 600px) {
+  .section-group h2 {
+    font-size: 1.5rem;
+  }
+  .icon-item i, .inline-svg {
+    width: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .icon-item span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tabletas (601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .section-group h2 {
+    font-size: 1.8rem;
+  }
+  .icon-item i, .inline-svg {
+    width: 3rem;
+    font-size: 3rem;
+  }
+  .icon-item span {
+    font-size: 1rem;
+  }
+}

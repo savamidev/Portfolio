@@ -68,10 +68,14 @@
   text-align: center;
   align-content: center;
   font-size: 15vw;
-  font-weight: bolder;
+  font-weight: 700;
 
   .letter {
     font-size: 15vw;
+  }
+
+  .about, .porfolio, .contact {
+    margin-bottom: 20px;
   }
 }
 
@@ -447,7 +451,9 @@ footer {
     font-size: 1.2rem;
     animation: marquee 15s linear infinite;
   }
-
+  .containerTwo {
+    font-weight: 600;
+  }
   .toggle-label .hidden-content {
     font-size: 1.2rem;
     font-weight: 300;
