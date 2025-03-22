@@ -12,7 +12,6 @@
 #container {
   display: flex;
   flex-direction: column;
-
   min-height: 100%;
 }
 
@@ -517,81 +516,63 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .name,
+  .subname {
+    font-size: 12rem;
+    margin: 20px auto;
+  }
+
   .worker {
-    margin-top: 25px;
-    padding: 10px;
+    width: 850px;
+    margin: 70px auto 40px;
+    height: 60px;
   }
-
+  
   .worker p {
-    font-size: 1.2rem;
-    animation: marquee 15s linear infinite;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8rem;
   }
 
-  .toggle-label .hidden-content {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 23px;
-  }
+  .containerTwo {
+    margin-top: 200px;
+    font-size: 6rem;
+    font-weight: 900;
+  
+    .letter {
+      font-size: 6rem;
+    }
 
-  #visibleAbout:checked + p.aboutText .toggle-label {
-    padding: 0.7em 1em 1.6em;
-    width: 230px;
-    height: 250px;
-  }
-
-  .hidden-contact {
-    font-size: 1.2rem;
-    padding: 12px;
-    max-width: 80%;
-
-  }
-
-  #contactoForm textarea,
-  #contactoForm label {
-    font-size: 1rem;
-  }
-
-  #contactoForm input,
-  #contactoForm select,
-  #contactoForm button {
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .genero, .acept {
-    padding: 10px 0px 10px 15px;
-  }
-
-  .social-media li:hover a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  nav {
-    margin: 50px auto;
-    ul {
-      li {
-        margin: 20px 60px;
-      }
+    .about, .porfolio, .contact {
+      margin-bottom: 50px;
     }
   }
 
-  .icon {
-    font-size: 3rem;
-  }
-  .social-media li {
-    position: relative;
-    width: 100px;
-    height: 2em;
-  }
-  
-  .social-media li:hover a {
-    font-size: 1.1rem;
+  .toggle-label .hidden-content {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 27px;
   }
 
-  footer {
-    font-size: 0.8rem;
+  #visibleAbout:checked + p.aboutText .toggle-label {
+    padding: 120px 110px 150px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .hidden-contact {
+    max-width: 500px;
+
+  }
+
+  nav {
+    margin: 100px auto;
+  
   }
 }
