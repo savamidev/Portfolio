@@ -1,4 +1,4 @@
-# Memoria Técnica del Proyecto "Portfolio Miguel Sánchez" 
+# Memoria Técnica del Proyecto
 
 Este documento describe aquellos aspectos técnicos y de diseño del proyecto Portfolio Personal. Se abordan desde la estructura de archivos y tecnologías utilizadas, hasta la paleta de colores, tipografía, técnicas de maquetación y responsividad empleadas.
 
@@ -6,7 +6,7 @@ Este documento describe aquellos aspectos técnicos y de diseño del proyecto Po
 
 ## Índice 📑
 
-- [Memoria Técnica del Proyecto "Portfolio Miguel Sánchez"](#memoria-técnica-del-proyecto-portfolio-miguel-sánchez)
+- [Memoria Técnica del Proyecto](#memoria-técnica-del-proyecto)
   - [Índice 📑](#índice-)
   - [Descripción General 📝](#descripción-general-)
   - [Logo 🌐](#logo-)
