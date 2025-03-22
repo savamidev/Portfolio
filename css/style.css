@@ -4,15 +4,15 @@
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
   --primaryColor: #f8cb74;
-  --secondColor:  #232323;
-  --textFormColor:  rgba(205, 205, 205, 0.562);
+  --secondColor: #232323;
+  --textFormColor: rgba(205, 205, 205, 0.562);
   background-color: var(--primaryColor);
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  
+
   min-height: 100%;
 }
 
@@ -33,9 +33,8 @@
 }
 
 .worker {
-  
   width: 90%;
-  margin: 10px auto 0px;
+  margin: 0px auto -10px;
   overflow: hidden;
   position: relative;
   background-color: #000;
@@ -77,39 +76,36 @@
   }
 }
 
+.containerTwo section {
+  margin: 10px auto;
+}
+
 #visibleAbout {
   display: none;
-  
 }
 
 .aboutText {
   display: inline-flex;
   align-items: center;
-  
-  
 }
-
 
 .toggle-label {
   cursor: pointer;
   transition: all 0.5s ease;
   display: inline-block;
   position: relative;
-  
 }
 
 .toggle-label .placeholder {
   display: inline;
-  
 }
 
 .toggle-label .hidden-content {
   display: none;
   font-size: 12px;
   font-weight: normal;
-  line-height: 15px;
+  line-height: 17px;
   background-color: #000;
-  
 }
 
 #visibleAbout:checked + p.aboutText .toggle-label {
@@ -129,22 +125,19 @@
 }
 
 #visibleAbout:checked + p.aboutText .letter:first-of-type {
-  margin-right: -40px; 
+  margin-right: -40px;
 }
 
 #visibleAbout:checked + p.aboutText .letter:last-of-type {
   margin-left: -37px;
 }
 
-
 #visibleAbout:checked + p.aboutText .toggle-label .hidden-content {
   display: inline;
-  
 }
 
 #visibleAbout:checked + p.aboutText .toggle-label .placeholder {
   display: none;
-  
 }
 
 .placeholder {
@@ -184,12 +177,10 @@
   transition: all 0.5s ease;
   display: inline-block;
   position: relative;
-  
 }
 
 .toggle-label-contact .placeholder {
   display: inline;
-  
 }
 
 .hidden-contact {
@@ -203,14 +194,12 @@
   margin: 10px auto;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
-  
 }
 
 #visibleContact:checked ~ .hidden-contact {
   display: flex;
   flex-direction: column;
   opacity: 1;
-
 }
 
 #contactoForm {
@@ -218,14 +207,13 @@
   flex-direction: column;
   background-color: black;
   gap: 2px;
-
 }
 
 #contactoForm label {
-  color:var(--textFormColor);
+  color: var(--textFormColor);
   font-size: 10px;
   font-weight: normal;
-  background-color:var(--secondColor);
+  background-color: var(--secondColor);
   margin-right: 10px;
 }
 
@@ -234,7 +222,6 @@
   align-content: center;
   padding-bottom: 10px;
   border-radius: 5px;
-
 }
 
 .genero {
@@ -242,9 +229,7 @@
   text-align: left;
   padding: 0px 0px 5px 10px;
   border-radius: 5px;
-
 }
-
 
 #contactoForm input,
 #contactoForm select,
@@ -254,8 +239,6 @@
   font-size: 10px;
   background-color: var(--secondColor);
   border-radius: 5px;
-
-  
 }
 #contactoForm input,
 #contactoForm select,
@@ -272,8 +255,6 @@
   box-shadow: 0 0 1px rgba(248, 204, 116, 0.317);
 }
 
-
-
 #contactoForm input,
 #contactoForm select {
   background-color: var(--secondColor);
@@ -282,7 +263,7 @@
 
 #contactoForm input::placeholder,
 #contactoForm textarea::placeholder {
-  color:var(--textFormColor);
+  color: var(--textFormColor);
 }
 
 #contactoForm textarea {
@@ -313,7 +294,6 @@ img {
 .hidden-porfolio {
   display: none;
   background-color: #000;
- 
 }
 
 #visiblePorfolio {
@@ -330,12 +310,10 @@ img {
   position: relative;
   cursor: pointer;
   transition: all 0.5s ease;
-  
 }
 
 .toggle-label-porfolio .placeholder {
   display: inline;
-  
 }
 
 .toggle-label-porfolio .hidden-porfolio {
@@ -349,11 +327,13 @@ img {
   align-content: center;
 }
 
-#visiblePorfolio:checked + p.porfolioText .toggle-label-porfolio .hidden-porfolio {
+#visiblePorfolio:checked
+  + p.porfolioText
+  .toggle-label-porfolio
+  .hidden-porfolio {
   display: flex;
-  flex-direction: row;    
-  justify-content: center; 
-
+  flex-direction: row;
+  justify-content: center;
 }
 
 #visiblePorfolio:checked + p.porfolioText .toggle-label-porfolio .placeholder {
@@ -385,7 +365,6 @@ img {
   margin-right: 100px;
 }
 
-
 nav {
   font-size: 13px;
   margin-top: 30px;
@@ -395,7 +374,8 @@ nav {
     display: inline-flex;
     margin-right: 40px;
     li {
-      margin: 15px;
+      text-align: center;
+      margin: 20px 40px;
     }
   }
 }
@@ -412,8 +392,8 @@ a {
 }
 .social-media li {
   position: relative;
-  width: 50px; 
-  height: 1em; 
+  width: 50px;
+  height: 1em;
 }
 
 .social-media li a,
@@ -436,7 +416,7 @@ a {
 }
 
 .social-media li:hover a {
-  opacity: 1; 
+  opacity: 1;
   font-size: 0.8rem;
   color: var(--primaryColor);
   background-color: var(--secondColor);
@@ -446,9 +426,8 @@ a {
 }
 
 .social-media li:hover .icon {
-  opacity: 0; 
+  opacity: 0;
 }
-
 
 footer {
   color: var(--primaryColor);
@@ -459,6 +438,160 @@ footer {
   margin-top: 30px;
 }
 
-@media (min-with: 768) {
+@media screen and (min-width: 768px) {
+  .worker {
+    margin-top: 25px;
+    padding: 10px;
+  }
+
+  .worker p {
+    font-size: 1.2rem;
+    animation: marquee 15s linear infinite;
+  }
+
+  .toggle-label .hidden-content {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 23px;
+  }
+
+  #visibleAbout:checked + p.aboutText .toggle-label {
+    padding: 0.7em 1em 1.6em;
+    width: 230px;
+    height: 250px;
+  }
+
+  .hidden-contact {
+    font-size: 1.2rem;
+    padding: 12px;
+    max-width: 80%;
+
+  }
+
+  #contactoForm textarea,
+  #contactoForm label {
+    font-size: 1rem;
+  }
+
+  #contactoForm input,
+  #contactoForm select,
+  #contactoForm button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .genero, .acept {
+    padding: 10px 0px 10px 15px;
+  }
+
+  .social-media li:hover a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  nav {
+    margin: 50px auto;
+    ul {
+      li {
+        margin: 20px 60px;
+      }
+    }
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+  .social-media li {
+    position: relative;
+    width: 100px;
+    height: 2em;
+  }
   
+  .social-media li:hover a {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .worker {
+    margin-top: 25px;
+    padding: 10px;
+  }
+
+  .worker p {
+    font-size: 1.2rem;
+    animation: marquee 15s linear infinite;
+  }
+
+  .toggle-label .hidden-content {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 23px;
+  }
+
+  #visibleAbout:checked + p.aboutText .toggle-label {
+    padding: 0.7em 1em 1.6em;
+    width: 230px;
+    height: 250px;
+  }
+
+  .hidden-contact {
+    font-size: 1.2rem;
+    padding: 12px;
+    max-width: 80%;
+
+  }
+
+  #contactoForm textarea,
+  #contactoForm label {
+    font-size: 1rem;
+  }
+
+  #contactoForm input,
+  #contactoForm select,
+  #contactoForm button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .genero, .acept {
+    padding: 10px 0px 10px 15px;
+  }
+
+  .social-media li:hover a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  nav {
+    margin: 50px auto;
+    ul {
+      li {
+        margin: 20px 60px;
+      }
+    }
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+  .social-media li {
+    position: relative;
+    width: 100px;
+    height: 2em;
+  }
+  
+  .social-media li:hover a {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
